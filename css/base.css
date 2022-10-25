@@ -1,0 +1,14 @@
+:root {
+    /* colors */
+    --blue_100pct: #2a7ae4;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
