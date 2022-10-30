@@ -1,0 +1,74 @@
+.products__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.category__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.category__name {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    font-weight: 700;
+    color: var(--dark_gray);
+}
+
+.link__all_products {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: var(--blue_100pct);
+}
+
+.products__by__category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+    max-height: 33.25rem;
+    overflow-y: hidden;
+}
+
+.product_card__container {
+    width: 9.75rem;
+    height: 15.625rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product__card__image {
+    width: 100%;
+    height: 10.875rem;
+}
+
+.product__name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--dark_gray);
+}
+
+.product__price {
+    color: var(--dark_gray);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1875rem;
+}
+
+.link__to__product {
+    color: var(--blue_100pct);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
