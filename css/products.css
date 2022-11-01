@@ -57,6 +57,7 @@
     font-weight: 500;
     line-height: 1rem;
     color: var(--dark_gray);
+    padding: 0 0.5rem;
 }
 
 .product__price {
@@ -64,6 +65,7 @@
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.1875rem;
+    padding: 0 0.5rem;
 }
 
 .link__to__product {
@@ -71,4 +73,5 @@
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 1rem;
+    padding: 0 0.5rem;
 }

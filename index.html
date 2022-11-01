@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/hero.css" />
         <link rel="stylesheet" href="./css/products.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
 
         <title>Alura Geek</title>
     </head>
@@ -69,6 +70,48 @@
                 </template>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="./images/Logo.svg" alt="logo" />
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__links__item">Quierenes somos</a
+                ><a href="#" class="footer__links__item"
+                    >Política de privacidad</a
+                ><a href="#" class="footer__links__item"
+                    >Programa de fidelidad</a
+                ><a href="#" class="footer__links__item">Nuestras tiendas</a
+                ><a href="#" class="footer__links__item"
+                    >Quiero ser franquiciado</a
+                ><a href="#" class="footer__links__item">Anuncie aquí</a>
+            </div>
+            <form class="footer__form">
+                <span class="footer__form__title">Hable con nosotros</span>
+                <div class="footer__form__name__container">
+                    <span class="footer__form__label">Nombre</span>
+                    <input
+                        class="footer__form__name"
+                        type="text"
+                        name="name"
+                        id="name"
+                    />
+                </div>
+                <textarea
+                    class="footer__form__message"
+                    name="message"
+                    id="message"
+                    placeholder="Escribe tu mensaje"
+                ></textarea>
+                <input
+                    class="footer__form__submit"
+                    type="submit"
+                    value="Enviar Mensaje"
+                />
+            </form>
+            <div class="footer__credit">
+                Desarrollado por Javier González • 2022
+            </div>
+        </footer>
         <script type="module" src="./js/index.js"></script>
     </body>
 </html>

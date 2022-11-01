@@ -5,7 +5,8 @@
     --white: #ffffff;
 }
 
-html {
+html,
+textarea {
     font-family: "Raleway", sans-serif;
 }
 
