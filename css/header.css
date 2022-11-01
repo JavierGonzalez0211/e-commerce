@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 4.5rem;
+}
+
+.header__login__Btn {
+    min-width: 133px;
+    height: 40px;
+    color: var(--blue_100pct);
+    border: 1px solid var(--blue_100pct);
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.header__search {
+    background: none;
+    border: none;
+    width: 1.5rem;
+    padding: 0;
+}
+
+.header__search img {
+    width: 100%;
+}
