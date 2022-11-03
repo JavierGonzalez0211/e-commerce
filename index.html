@@ -28,8 +28,20 @@
             <div class="header__logo">
                 <img src="./images/Logo.svg" alt="logo" />
             </div>
+            <div class="header__search__big__screen__container">
+                <input
+                    type="text"
+                    name="searchInput"
+                    id="searchInput"
+                    class="header__search__big__screen__input"
+                    placeholder="¿Qué deseas buscar?"
+                />
+                <button class="header__search__big__screen__btn">
+                    <img src="./images/SearchBigScreen.svg" alt="search-icon" />
+                </button>
+            </div>
             <a href="#" class="header__login__Btn">Login</a>
-            <button class="header__search">
+            <button class="header__search hide__big__screens">
                 <img src="./images/Search.svg" alt="search-icon" />
             </button>
         </header>
@@ -71,19 +83,21 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__logo">
-                <img src="./images/Logo.svg" alt="logo" />
-            </div>
-            <div class="footer__links">
-                <a href="#" class="footer__links__item">Quierenes somos</a
-                ><a href="#" class="footer__links__item"
-                    >Política de privacidad</a
-                ><a href="#" class="footer__links__item"
-                    >Programa de fidelidad</a
-                ><a href="#" class="footer__links__item">Nuestras tiendas</a
-                ><a href="#" class="footer__links__item"
-                    >Quiero ser franquiciado</a
-                ><a href="#" class="footer__links__item">Anuncie aquí</a>
+            <div class="footer__logo_and_links">
+                <div class="footer__logo">
+                    <img src="./images/Logo.svg" alt="logo" />
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__links__item">Quierenes somos</a
+                    ><a href="#" class="footer__links__item"
+                        >Política de privacidad</a
+                    ><a href="#" class="footer__links__item"
+                        >Programa de fidelidad</a
+                    ><a href="#" class="footer__links__item">Nuestras tiendas</a
+                    ><a href="#" class="footer__links__item"
+                        >Quiero ser franquiciado</a
+                    ><a href="#" class="footer__links__item">Anuncie aquí</a>
+                </div>
             </div>
             <form class="footer__form">
                 <span class="footer__form__title">Hable con nosotros</span>

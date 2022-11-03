@@ -1,17 +1,21 @@
 :root {
     /* colors */
+    --background: #f5f5f5;
     --blue_100pct: #2a7ae4;
+    --blue_10pct: #eaf2fd;
+    --black_50pct: #a2a2a2;
     --dark_gray: #464646;
     --white: #ffffff;
 }
 
 html,
+input,
 textarea {
     font-family: "Raleway", sans-serif;
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: var(--background);
 }
 
 a:hover,
