@@ -24,7 +24,7 @@
         <title>Alura Geek</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header container">
             <div class="header__logo">
                 <img src="./images/Logo.svg" alt="logo" />
             </div>
@@ -46,14 +46,14 @@
             </button>
         </header>
         <main>
-            <section class="hero__container">
+            <section class="hero__container container">
                 <h2 class="hero__title">Febrero Promocional</h2>
                 <p class="hero__text">
                     Productos seleccionados con 33% de descuento
                 </p>
                 <a class="hero__promotions__btn" href="#">Ver consolas</a>
             </section>
-            <section class="products__container">
+            <section class="products__container container">
                 <template id="show__productos">
                     <section class="category__container">
                         <div class="category__header">
@@ -82,7 +82,7 @@
                 </template>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer container">
             <div class="footer__logo_and_links">
                 <div class="footer__logo">
                     <img src="./images/Logo.svg" alt="logo" />
@@ -122,10 +122,11 @@
                     value="Enviar Mensaje"
                 />
             </form>
-            <div class="footer__credit">
-                Desarrollado por Javier González • 2022
-            </div>
         </footer>
+        <div class="footer__credit">
+            <p>Desarrollado por Javier González</p>
+            <p>2022</p>
+        </div>
         <script type="module" src="./js/index.js"></script>
     </body>
 </html>
