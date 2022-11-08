@@ -17,13 +17,12 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/hero.css" />
-        <link rel="stylesheet" href="./css/products.css" />
+        <link rel="stylesheet" href="./css/login.css" />
         <link rel="stylesheet" href="./css/footer.css" />
 
         <title>Alura Geek - login</title>
     </head>
-    <body>
+    <body class="page__container">
         <header class="header container">
             <div class="header__logo">
                 <img src="./images/Logo.svg" alt="logo" />
@@ -40,32 +39,30 @@
                     <img src="./images/SearchBigScreen.svg" alt="search-icon" />
                 </button>
             </div>
-            <a href="#" class="header__login__Btn">Login</a>
             <button class="header__search hide__big__screens">
                 <img src="./images/Search.svg" alt="search-icon" />
             </button>
         </header>
-        <main>
-            <section class="login__container container">
-                <h2 class="login__title">login</h2>
-                <form class="login__form">
-                    <input
-                        class="login__form__email"
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Escriba su correo electrónico"
-                    />
-                    <input
-                        class="login__form__password"
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="Escriba su contraseña"
-                    />
-                </form>
-            </section>
-        </main>
+        <section class="login__container container">
+            <form class="login__form">
+                <span class="footer__form__title">Iniciar sesión</span>
+                <input
+                    class="login__form__email input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Escriba su correo electrónico"
+                />
+                <input
+                    class="login__form__password input"
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Escriba su contraseña"
+                />
+                <input class="submit__btn" type="submit" value="Entrar" />
+            </form>
+        </section>
         <footer class="footer container">
             <div class="footer__logo_and_links">
                 <div class="footer__logo">
@@ -86,20 +83,20 @@
             <form class="footer__form">
                 <span class="footer__form__title">Hable con nosotros</span>
                 <input
-                    class="footer__form__name"
+                    class="footer__form__name input"
                     type="text"
                     name="name"
                     id="name"
                     placeholder="Nombre"
                 />
                 <textarea
-                    class="footer__form__message"
+                    class="footer__form__message input"
                     name="message"
                     id="message"
                     placeholder="Escribe tu mensaje"
                 ></textarea>
                 <input
-                    class="footer__form__submit"
+                    class="submit__btn"
                     type="submit"
                     value="Enviar Mensaje"
                 />
