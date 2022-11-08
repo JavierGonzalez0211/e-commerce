@@ -1,0 +1,38 @@
+.page__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__form__title {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875;
+    color: var(--dark_gray);
+}
+
+.login__form__email {
+    width: 17.25rem;
+    height: 2.5rem;
+}
+
+.login__form__password {
+    width: 17.25rem;
+    height: 2.5rem;
+}
