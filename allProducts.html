@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/base.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/hero.css" />
+        <link rel="stylesheet" href="./css/products.css" />
+        <link rel="stylesheet" href="./css/allProducts.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+
+        <title>All products</title>
+    </head>
+    <body>
+        <header class="header container">
+            <div class="header__logo">
+                <img src="./images/Logo.svg" alt="logo" />
+            </div>
+            <div class="header__search__big__screen__container">
+                <input
+                    type="text"
+                    name="searchInput"
+                    id="searchInput"
+                    class="header__search__big__screen__input"
+                    placeholder="¿Qué deseas buscar?"
+                />
+                <button class="header__search__big__screen__btn">
+                    <img src="./images/SearchBigScreen.svg" alt="search-icon" />
+                </button>
+            </div>
+            <button class="header__search hide__big__screens">
+                <img src="./images/Search.svg" alt="search-icon" />
+            </button>
+        </header>
+        <main>
+            <section class="allProducts__container container">
+                <div class="allProducts__head__section">
+                    <span class="allProducts__head__title"
+                        >Todos los productos</span
+                    >
+                    <a href="#" class="addProduct__btn">Agegar producto</a>
+                </div>
+                <template id="show__productos">
+                    <section class="category__allProducts__container">
+                        <div
+                            id="products__by__category"
+                            class="allProducts__by__category"
+                        >
+                            <template id="product_card">
+                                <div class="product_card__container">
+                                    <img class="product__card__image" />
+                                    <span class="product__name"></span>
+                                    <span class="product__price"></span>
+                                    <a href="#" class="link__to__product"
+                                        >Ver producto</a
+                                    >
+                                </div>
+                            </template>
+                        </div>
+                    </section>
+                </template>
+            </section>
+        </main>
+        <footer class="footer container">
+            <div class="footer__logo_and_links">
+                <div class="footer__logo">
+                    <img src="./images/Logo.svg" alt="logo" />
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__links__item">Quierenes somos</a
+                    ><a href="#" class="footer__links__item"
+                        >Política de privacidad</a
+                    ><a href="#" class="footer__links__item"
+                        >Programa de fidelidad</a
+                    ><a href="#" class="footer__links__item">Nuestras tiendas</a
+                    ><a href="#" class="footer__links__item"
+                        >Quiero ser franquiciado</a
+                    ><a href="#" class="footer__links__item">Anuncie aquí</a>
+                </div>
+            </div>
+            <form class="footer__form">
+                <span class="footer__form__title">Hable con nosotros</span>
+                <input
+                    class="footer__form__name input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Nombre"
+                />
+                <textarea
+                    class="footer__form__message input"
+                    name="message"
+                    id="message"
+                    placeholder="Escribe tu mensaje"
+                ></textarea>
+                <input
+                    class="submit__btn"
+                    type="submit"
+                    value="Enviar Mensaje"
+                />
+            </form>
+        </footer>
+        <div class="footer__credit">
+            <p>Desarrollado por Javier González</p>
+            <p>2022</p>
+        </div>
+        <script type="module" src="./js/allProducts.js"></script>
+    </body>
+</html>
