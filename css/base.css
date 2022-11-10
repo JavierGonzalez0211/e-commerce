@@ -19,7 +19,8 @@ body {
 }
 
 a:hover,
-button:hover {
+button:hover,
+.submit__btn:hover {
     cursor: pointer;
     opacity: 0.85;
 }

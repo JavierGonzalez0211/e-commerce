@@ -70,26 +70,8 @@
     width: 100%;
 }
 
-/* @media (min-width: 1024px) {
-    .login__form {
-        width: 26.5rem;
-        gap: 2rem;
+@media (min-width: 1024px) {
+    .addProduct__form {
+        width: 35rem;
     }
-
-    .login__form__title {
-        font-size: 1.125rem;
-    }
-
-    .login__form__email {
-        height: 4rem;
-    }
-
-    .login__form__password {
-        height: 4rem;
-    }
-
-    .login__btn {
-        width: 100%;
-        height: 4rem;
-    }
-} */
+}
