@@ -1,0 +1,95 @@
+.page__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.addProduct__container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__adminMenu__Btn {
+    min-width: 166px;
+    height: 40px;
+    color: var(--blue_100pct);
+    border: 1px solid var(--blue_100pct);
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.addProduct__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.addProduct__form__title {
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    color: var(--dark_gray);
+}
+
+.addProduct__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    border-bottom: 1px solid #c8c8c8;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--dark_gray);
+}
+
+.label {
+    font-size: 0.75rem;
+    color: var(--black_50pct);
+}
+
+.input {
+    border: none;
+    color: var(--dark_gray);
+    padding: 0;
+}
+
+.productDescription {
+    resize: none;
+}
+
+.addProduct__btn {
+    width: 100%;
+}
+
+/* @media (min-width: 1024px) {
+    .login__form {
+        width: 26.5rem;
+        gap: 2rem;
+    }
+
+    .login__form__title {
+        font-size: 1.125rem;
+    }
+
+    .login__form__email {
+        height: 4rem;
+    }
+
+    .login__form__password {
+        height: 4rem;
+    }
+
+    .login__btn {
+        width: 100%;
+        height: 4rem;
+    }
+} */
