@@ -6,7 +6,6 @@
     align-items: center;
     height: 4.5rem;
     background-color: var(--white);
-    padding: 1rem;
 }
 
 .header__search__big__screen__container {
@@ -37,6 +36,12 @@
 /* media queries */
 
 @media (min-width: 768px) {
+    .header__logo__and__search__big__screen {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+    }
     .hide__big__screens {
         display: none;
     }
