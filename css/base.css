@@ -51,6 +51,10 @@ button:hover {
     color: var(--white);
 }
 
+.container {
+    padding: 1rem;
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 2rem;

@@ -1,43 +1,38 @@
 import { productsCategories, categoryNames, createProducts } from "./fakeDB.js";
 
-const $productsContainer = document.querySelector(".allProducts__container");
+const $productsContainer = document.querySelector(".all__product__cards");
 const $fragment = document.createDocumentFragment();
 
 const products = createProducts(6);
 
-productsCategories.forEach((category, index) => {
+const allProducts = [];
+
+productsCategories.forEach((category) => {
+    products[category].forEach((product) => {
+        product.src = `./images/products/${category}/${product.productImage}`;
+        allProducts.push(product);
+    });
+});
+
+allProducts.forEach(({ productImage, productName, productPrice, src }) => {
     const $allProductsTemplate =
         document.getElementById("show__productos").content;
     const $allProductsTemplateClone = $allProductsTemplate.cloneNode(true);
-    const $categoryContainer = $allProductsTemplateClone.querySelector(
-        ".category__allProducts__container"
+    let $productCardContainer = $allProductsTemplateClone.querySelector(
+        ".product_card__container"
     );
-    const $productsByCategory = $allProductsTemplateClone.querySelector(
-        ".allProducts__by__category"
+    let $productImg = $allProductsTemplateClone.querySelector(
+        ".product__card__image"
     );
-    products[category].forEach(
-        ({ productImage, productName, productPrice }) => {
-            const $productTemplate =
-                $allProductsTemplate.getElementById("product_card").content;
-            const $productTemplateClone = $productTemplate.cloneNode(true);
-            let $productImg = $productTemplateClone.querySelector(
-                ".product__card__image"
-            );
-            $productImg.setAttribute(
-                "src",
-                `./images/products/${category}/${productImage}`
-            );
-            let $productName =
-                $productTemplateClone.querySelector(".product__name");
-            $productName.innerText = productName;
-            let $productPrice =
-                $productTemplateClone.querySelector(".product__price");
-            $productPrice.innerText = productPrice;
-            $productsByCategory.appendChild($productTemplateClone);
-        }
-    );
-    $categoryContainer.appendChild($productsByCategory);
-    $allProductsTemplateClone.appendChild($categoryContainer);
+    $productImg.setAttribute("src", src);
+    let $productName =
+        $allProductsTemplateClone.querySelector(".product__name");
+    $productName.innerText = productName;
+    let $productPrice =
+        $allProductsTemplateClone.querySelector(".product__price");
+    $productPrice.innerText = productPrice;
+    $allProductsTemplateClone.appendChild($productCardContainer);
     $fragment.appendChild($allProductsTemplateClone);
 });
+
 $productsContainer.appendChild($fragment);
