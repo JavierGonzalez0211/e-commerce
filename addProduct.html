@@ -17,14 +17,12 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/hero.css" />
-        <link rel="stylesheet" href="./css/products.css" />
-        <link rel="stylesheet" href="./css/allProducts.css" />
+        <link rel="stylesheet" href="./css/addProduct.css" />
         <link rel="stylesheet" href="./css/footer.css" />
 
-        <title>All products</title>
+        <title>Add Product</title>
     </head>
-    <body>
+    <body class="page__container">
         <header class="header container">
             <div class="header__logo__and__search__big__screen">
                 <div class="header__logo">
@@ -46,34 +44,69 @@
                     </button>
                 </div>
             </div>
+            <a href="#" class="header__adminMenu__Btn">Menú Administrador</a>
             <button class="header__search hide__big__screens">
                 <img src="./images/Search.svg" alt="search-icon" />
             </button>
         </header>
-        <main>
-            <section class="allProducts__container container">
-                <div class="allProducts__head__section">
-                    <span class="allProducts__head__title"
-                        >Todos los productos</span
-                    >
-                    <a href="./addProduct.html" class="addProduct__btn"
-                        >Agegar producto</a
-                    >
-                </div>
-                <div class="all__product__cards">
-                    <template id="show__productos">
-                        <div class="product_card__container">
-                            <img class="product__card__image" />
-                            <span class="product__name"></span>
-                            <span class="product__price"></span>
-                            <a href="#" class="link__to__product"
-                                >Ver producto</a
-                            >
-                        </div>
-                    </template>
-                </div>
-            </section>
-        </main>
+        <section class="addProduct__container container">
+            <form class="addProduct__form">
+                <span class="addProduct__form__title"
+                    >Agregar un Nuevo producto</span
+                >
+                <label class="addProduct__input label" for="urlImage"
+                    >URL de la imagen
+                    <input
+                        class="input"
+                        type="text"
+                        name="urlImage"
+                        id="urlImage"
+                    />
+                </label>
+                <label class="addProduct__input label" for="category"
+                    >Categoría
+                    <input
+                        class="input"
+                        type="text"
+                        name="category"
+                        id="category"
+                    />
+                </label>
+                <label class="addProduct__input label" for="productName"
+                    >Nombre del producto
+                    <input
+                        class="input"
+                        type="text"
+                        name="productName"
+                        id="productName"
+                    />
+                </label>
+                <label class="addProduct__input label" for="productPrice"
+                    >Precio del producto
+                    <input
+                        class="input"
+                        type="text"
+                        name="productPrice"
+                        id="productPrice"
+                    />
+                </label>
+
+                <label class="addProduct__input label" for="productDescription"
+                    >Descripción del producto
+                    <textarea
+                        class="productDescription input"
+                        name="productDescription"
+                        id="productDescription"
+                        rows="4"
+                    ></textarea>
+                </label>
+                <input
+                    class="submit__btn addProduct__btn"
+                    type="submit"
+                    value="Entrar"
+                />
+            </form>
+        </section>
         <footer class="footer container">
             <div class="footer__logo_and_links">
                 <div class="footer__logo">
@@ -117,6 +150,6 @@
             <p>Desarrollado por Javier González</p>
             <p>2022</p>
         </div>
-        <script type="module" src="./js/allProducts.js"></script>
+        <script type="module" src="./js/index.js"></script>
     </body>
 </html>
