@@ -1,38 +1,23 @@
-import { productsCategories, categoryNames, createProducts } from "./fakeDB.js";
-
-const $productsContainer = document.querySelector(".all__product__cards");
-const $fragment = document.createDocumentFragment();
+import { createProducts } from "./fakeDB.js";
+import { renderAllProducts } from "./renderingProducts.js";
+import { renderingSearch } from "./searchProducts.js";
 
 const products = createProducts(6);
+const $productsContainer = document.querySelector(".all__product__cards");
+const $searchInput = document.getElementById("searchInput");
+const $searchBtn = document.querySelector(".header__search__big__screen__btn");
 
-const allProducts = [];
+//? initial render
+renderAllProducts(products, $productsContainer);
 
-productsCategories.forEach((category) => {
-    products[category].forEach((product) => {
-        product.src = `./images/products/${category}/${product.productImage}`;
-        allProducts.push(product);
-    });
+//? searching bar button
+$searchBtn.addEventListener("click", () =>
+    renderingSearch(products, $searchInput.value, $productsContainer)
+);
+
+//? searching input
+$searchInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        renderingSearch(products, $searchInput.value, $productsContainer);
+    }
 });
-
-allProducts.forEach(({ productImage, productName, productPrice, src }) => {
-    const $allProductsTemplate =
-        document.getElementById("show__productos").content;
-    const $allProductsTemplateClone = $allProductsTemplate.cloneNode(true);
-    let $productCardContainer = $allProductsTemplateClone.querySelector(
-        ".product_card__container"
-    );
-    let $productImg = $allProductsTemplateClone.querySelector(
-        ".product__card__image"
-    );
-    $productImg.setAttribute("src", src);
-    let $productName =
-        $allProductsTemplateClone.querySelector(".product__name");
-    $productName.innerText = productName;
-    let $productPrice =
-        $allProductsTemplateClone.querySelector(".product__price");
-    $productPrice.innerText = productPrice;
-    $allProductsTemplateClone.appendChild($productCardContainer);
-    $fragment.appendChild($allProductsTemplateClone);
-});
-
-$productsContainer.appendChild($fragment);
