@@ -20,7 +20,7 @@ body {
 
 a:hover,
 button:hover,
-.submit__btn:hover {
+.touchable:hover {
     cursor: pointer;
     opacity: 0.85;
 }

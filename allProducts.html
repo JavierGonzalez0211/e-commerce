@@ -63,7 +63,21 @@
                 <div class="all__product__cards">
                     <template id="show__productos">
                         <div class="product_card__container">
-                            <img class="product__card__image" />
+                            <div class="product__image__container">
+                                <div class="icons__container">
+                                    <img
+                                        class="touchable"
+                                        src="./icons/edit_white.svg"
+                                        alt="edit icon"
+                                    />
+                                    <img
+                                        class="touchable"
+                                        src="./icons/delete_white.svg"
+                                        alt="delete icon"
+                                    />
+                                </div>
+                                <img class="product__card__image" />
+                            </div>
                             <span class="product__name"></span>
                             <span class="product__price"></span>
                             <a href="#" class="link__to__product"
@@ -107,7 +121,7 @@
                     placeholder="Escribe tu mensaje"
                 ></textarea>
                 <input
-                    class="submit__btn"
+                    class="submit__btn touchable"
                     type="submit"
                     value="Enviar Mensaje"
                 />
