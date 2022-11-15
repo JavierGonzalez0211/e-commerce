@@ -1,6 +1,7 @@
+import { cleanRenderedProducts } from "./cleanRenderedProducts.js";
 import { createProducts } from "./fakeDB.js";
 import { renderAllProducts } from "./renderingProducts.js";
-import { renderingSearch } from "./searchProducts.js";
+import { searchProducts } from "./searchProducts.js";
 
 const products = createProducts(6);
 const $productsContainer = document.querySelector(".all__product__cards");
@@ -11,13 +12,25 @@ const $searchBtn = document.querySelector(".header__search__big__screen__btn");
 renderAllProducts(products, $productsContainer);
 
 //? searching bar button
-$searchBtn.addEventListener("click", () =>
-    renderingSearch(products, $searchInput.value, $productsContainer)
-);
+$searchBtn.addEventListener("click", () => {
+    const searchResult = searchProducts(products, $searchInput.value);
+    if (searchResult.length > 0) {
+        cleanRenderedProducts($productsContainer);
+        renderAllProducts(searchResult, $productsContainer);
+    } else {
+        alert("producto no encontrado");
+    }
+});
 
 //? searching input
 $searchInput.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
-        renderingSearch(products, $searchInput.value, $productsContainer);
+        const searchResult = searchProducts(products, $searchInput.value);
+        if (searchResult.length > 0) {
+            cleanRenderedProducts($productsContainer);
+            renderAllProducts(searchResult, $productsContainer);
+        } else {
+            alert("producto no encontrado");
+        }
     }
 });
