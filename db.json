@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": "f65a654f-631b-4c2e-81bf-031eda432bdb",
+      "productName": "Product XYZ-1",
+      "productCategory": "1_Star-Wars",
+      "productImage": "./images/products/1_Star-Wars/1_Star-Wars_1.png",
+      "productPrice": "$ 60.00"
+    },
+    {
+      "id": "7980c36d-ade7-4e2d-a897-4b03495e1ecc",
+      "productImage": "./images/products/1_Star-Wars/1_Star-Wars_2.png",
+      "productName": "Product XYZ-2",
+      "productPrice": "$ 60.00",
+      "productCategory": "1_Star-Wars"
+    },
+    {
+      "id": "71e2921d-19ca-4570-9f36-2348040da12c",
+      "productImage": "./images/products/1_Star-Wars/1_Star-Wars_2.png",
+      "productName": "Product XYZ-2",
+      "productPrice": "$ 60.00",
+      "productCategory": "1_Star-Wars"
+    },
+    {
+      "id": "add85bf0-326e-4875-91e2-4ea9822711b2",
+      "productImage": "./images/products/1_Star-Wars/1_Star-Wars_2.png",
+      "productName": "Product XYZ-2",
+      "productPrice": "$ 60.00",
+      "productCategory": "1_Star-Wars"
+    }
+  ]
+}
