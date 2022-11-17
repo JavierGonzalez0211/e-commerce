@@ -10,7 +10,6 @@ const $searchBtn = document.querySelector(".header__search__big__screen__btn");
 
 //? initial render
 renderAllProducts(products, $productsContainer);
-
 //? searching bar button
 $searchBtn.addEventListener("click", () => {
     const searchResult = searchProducts(products, $searchInput.value);
