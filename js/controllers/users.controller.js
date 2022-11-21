@@ -15,7 +15,7 @@ const validateUser = async (userToValidate) => {
         );
         const isValidPassword = isUser?.password === userToValidate.password;
         if (isUser && isValidPassword) {
-            window.location.href = "../allProducts.html";
+            window.location.href = "../allProductsAdmin.html";
         } else {
             alert("usuario o password incorrecto");
         }
