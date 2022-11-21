@@ -28,5 +28,25 @@
       "productPrice": "$ 60.00",
       "productCategory": "1_Star-Wars"
     }
+  ],
+  "users": [
+    {
+      "id":1,
+      "user": "user1",
+      "email": "user1@email.com",
+      "password": "pas111"
+    },
+    {
+      "id":2,
+      "user": "user2",
+      "email": "user2@email.com",
+      "password": "pas222"
+    },
+    {
+      "id":3,
+      "user": "user3",
+      "email": "user3@email.com",
+      "password": "pas333"
+    }
   ]
 }

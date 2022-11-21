@@ -5,6 +5,7 @@
     --blue_10pct: #eaf2fd;
     --black_50pct: #a2a2a2;
     --dark_gray: #464646;
+    --error: #dc143c;
     --white: #ffffff;
 }
 
@@ -39,6 +40,15 @@ button:hover,
 .input:focus {
     border: none;
     outline: none;
+}
+
+.input__error:focus {
+    border: 1px solid var(--error);
+}
+
+.input__message__error {
+    color: var(--error);
+    padding-left: 0.5rem;
 }
 
 .submit__btn {
