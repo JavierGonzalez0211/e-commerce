@@ -31,20 +31,29 @@
         <section class="login__container">
             <form class="login__form">
                 <span class="login__form__title">Iniciar sesión</span>
-                <input
-                    class="login__form__email input"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Escribe tu correo electrónico"
-                />
-                <input
-                    class="login__form__password input"
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Escribe tu contraseña"
-                />
+                <div class="input__container">
+                    <input
+                        class="login__form__email input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Escribe tu correo electrónico"
+                        required
+                    />
+                    <span class="input__message__error"></span>
+                </div>
+                <div class="input__container">
+                    <input
+                        class="login__form__password input"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Escribe tu contraseña"
+                        minlength="6"
+                        required
+                    />
+                    <span class="input__message__error"></span>
+                </div>
                 <input
                     class="submit__btn touchable login__btn"
                     type="submit"
@@ -95,5 +104,10 @@
             <p>Desarrollado por Javier González</p>
             <p>2022</p>
         </div>
+        <script
+            type="module"
+            src="./js/controllers/users.controller.js"
+        ></script>
+        <script type="module" src="./js/inputValidations/validate.js"></script>
     </body>
 </html>

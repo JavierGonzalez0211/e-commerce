@@ -1,5 +1,6 @@
 const baseURL = "http://localhost:3000/";
 const productsURI = "products";
+const usersURI = "users";
 
 const getURL = (uri) => {
     return `${baseURL}${uri}`;
@@ -8,4 +9,5 @@ const getURL = (uri) => {
 export const URL_constants = {
     productsURI,
     getURL,
+    usersURI,
 };
