@@ -4,16 +4,13 @@ import { renderProductsByCategory } from "./renderingProducts.js";
 import { searchProducts } from "./searchProducts.js";
 
 export const products = createProducts(6);
-const consoleProducts = products.filter(
-    (product) => product.productCategory === "2_Consoles"
-);
 
 const $searchInput = document.getElementById("searchInput");
 const $searchBtn = document.querySelector(".header__search__big__screen__btn");
-const $productsContainer = document.querySelector(".products__one__container");
+const $productsContainer = document.querySelector(".products__container");
 
 //? initial render
-renderProductsByCategory(consoleProducts, $productsContainer);
+renderProductsByCategory(products, $productsContainer);
 
 //? searching bar button
 $searchBtn.addEventListener("click", () => {

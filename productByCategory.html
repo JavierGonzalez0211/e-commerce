@@ -17,13 +17,14 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/hero.css" />
+
         <link rel="stylesheet" href="./css/products.css" />
+        <link rel="stylesheet" href="./css/categoryProduct.css" />
         <link rel="stylesheet" href="./css/footer.css" />
 
         <title>Alura Geek</title>
     </head>
-    <body>
+    <body class="page__container">
         <header class="header container">
             <div class="header__logo__and__search__big__screen">
                 <div class="header__logo">
@@ -51,16 +52,7 @@
             </button>
         </header>
         <main>
-            <section class="hero__container container">
-                <h2 class="hero__title">Febrero Promocional</h2>
-                <p class="hero__text">
-                    Productos seleccionados con 33% de descuento
-                </p>
-                <a class="hero__promotions__btn" href="./productByCategory.html"
-                    >Ver consolas</a
-                >
-            </section>
-            <section class="products__container container">
+            <section class="products__one__container container">
                 <template id="show__productos">
                     <section class="category__container">
                         <div class="category__header">
@@ -134,7 +126,7 @@
             <p>Desarrollado por Javier González</p>
             <p>2022</p>
         </div>
-        <script type="module" src="./js/indexProducts.js"></script>
+        <script type="module" src="./js/productsByCategory.js"></script>
         <script type="module" src="./js/showSearchBar.js"></script>
     </body>
 </html>
