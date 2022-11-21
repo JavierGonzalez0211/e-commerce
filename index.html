@@ -110,19 +110,29 @@
             </div>
             <form class="footer__form">
                 <span class="footer__form__title">Hable con nosotros</span>
-                <input
-                    class="footer__form__name input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Nombre"
-                />
-                <textarea
-                    class="footer__form__message input"
-                    name="message"
-                    id="message"
-                    placeholder="Escribe tu mensaje"
-                ></textarea>
+                <div class="input__container">
+                    <input
+                        class="footer__form__name input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Nombre"
+                        required
+                        maxlength="40"
+                    />
+                    <span class="input__message__error"></span>
+                </div>
+                <div class="input__container">
+                    <textarea
+                        class="footer__form__message input"
+                        name="message"
+                        id="message"
+                        placeholder="Escribe tu mensaje"
+                        required
+                        maxlength="120"
+                    ></textarea>
+                    <span class="input__message__error"></span>
+                </div>
                 <input
                     class="submit__btn touchable"
                     type="submit"
@@ -136,5 +146,6 @@
         </div>
         <script type="module" src="./js/indexProducts.js"></script>
         <script type="module" src="./js/showSearchBar.js"></script>
+        <script type="module" src="./js/inputValidations/validate.js"></script>
     </body>
 </html>
